@@ -8,6 +8,7 @@ import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
@@ -265,6 +266,14 @@ public class RevealLayout extends FrameLayout{
                     bringChildToFront(child);
                 }
             }
+
+            Log.v("xhw","next-----");
+            for (int i = 0; i < childCount; i++) {
+                View child = getChildAt(i);
+                Log.v("xhw","index:"+i+"， id："+child.getId()+" ，view： "+child);
+            }
+            Log.v("xhw","end-----");
+
             show(x, y, duration, listener);
         }
     }

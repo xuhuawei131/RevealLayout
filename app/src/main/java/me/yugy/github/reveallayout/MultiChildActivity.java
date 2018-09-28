@@ -27,6 +27,10 @@ public class MultiChildActivity extends AppCompatActivity {
 
         mRevealLayout = (RevealLayout) findViewById(R.id.reveal_layout);
 
+        int one=R.id.text_one;
+        int two=R.id.text_two;
+        int three=R.id.text_thredd;
+        Log.v("xhw","mRevealLayout id one:"+one+",two:"+two+",three:"+three);
         initRevealLayout();
     }
 

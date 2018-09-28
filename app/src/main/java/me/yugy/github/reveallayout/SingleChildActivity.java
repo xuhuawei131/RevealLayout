@@ -14,8 +14,8 @@ import android.widget.Toast;
 public class SingleChildActivity extends AppCompatActivity {
 
     private RevealLayout mRevealLayout;
-    private boolean mIsAnimationSlowDown = false;
-    private boolean mIsBaseOnTouchLocation = false;
+    private boolean mIsAnimationSlowDown = true;
+    private boolean mIsBaseOnTouchLocation = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
